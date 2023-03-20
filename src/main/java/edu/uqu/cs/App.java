@@ -8,7 +8,7 @@ package edu.uqu.cs;
 * Make sure to complete and submit your lab
 */
 
-import java.util.Scanner;
+
 public class App{
 
 /**  
@@ -49,7 +49,8 @@ public class App{
         /* Write your code here */
         public static void twisters() {
 
-            for (int i = 1; i <= 110; i++) {
+            for (int i = 1; i <=20; i++) {
+                if(i % 2 == 0 ||i % 4 == 0 ||i % 6 == 0){
     
                 if (i % 2 == 0) {
                     System.out.print("Tweetle");
@@ -62,11 +63,11 @@ public class App{
                         System.out.print("Poodle");
                     }
                 }
-                else {
-                    System.out.print(" " + i + " ");
+            }else {
+                    System.out.print(i);
                 }
-                if(i%11==0)
-                System.out.println();
+               
+                System.out.print(" ");
        //call method twisters()
        //prompt user to enter a string 
        //call method phoneKeypad(string)
